@@ -1,0 +1,101 @@
+/* Reset and full-page base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, black, #5b21b6);
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+/* Supplier Page Layout */
+.supplier-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Content Section Layout */
+.supplier-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.supply-section,
+.graphs-section {
+  background-color: rgba(255, 255, 255, 0.06);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Headings */
+.supply-section h2,
+.graphs-section h2 {
+  margin-bottom: 1rem;
+  color: #ddd6fe;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* List Styling */
+.supply-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.supply-section li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 1rem;
+  color: #f3f4f6;
+}
+
+/* Button Styling */
+.download-btn {
+  align-self: flex-start;
+  background-color: #7c3aed;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(124, 58, 237, 0.3);
+}
+
+.download-btn:hover {
+  background-color: #6b21a8;
+}
+
+/* Accessibility improvement for button */
+.download-btn:focus {
+  outline: 3px solid #6b21a8;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .supplier-container {
+    padding: 1rem;
+  }
+
+  .download-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

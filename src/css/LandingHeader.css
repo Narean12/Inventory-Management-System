@@ -1,0 +1,63 @@
+.landing-header {
+  background-color: rgb(3, 1, 5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.landing-header-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.landing-logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.25rem;
+  cursor: default;
+}
+
+.landing-logo-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #a855f7;
+  margin-right: 0.5rem;
+}
+
+.landing-header-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.landing-header-button {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #d1d5db;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+.landing-header-button:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #a855f7;
+}
+
+.signup-button {
+  background-color: #9333ea;
+  color: white;
+  border: none;
+}
+
+.signup-button:hover {
+  background-color: #7e22ce;
+  color: white;
+}

@@ -1,0 +1,107 @@
+.product-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.product-form-container {
+  background: rgba(27, 20, 100, 0.9);
+  border-radius: 12px;
+  padding: 32px 40px;
+  width: 400px;
+  box-shadow: 0 8px 16px rgba(107, 33, 182, 0.6);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.product-form-container h2 {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #e0d7ff;
+}
+
+.product-form-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.product-form-container label {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #d1c4e9;
+  width: 100%;
+  text-align: left;
+}
+
+.product-form-container input[type="text"],
+.product-form-container input[type="number"] {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #1a1a1a;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.product-form-container input[type="text"]:focus,
+.product-form-container input[type="number"]:focus {
+  box-shadow: 0 0 8px 3px #7c3aed;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 28px;
+  width: 100%;
+}
+
+.submit-btn {
+  background-color: #6b21b6;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex: 1;
+}
+
+.submit-btn:hover {
+  background-color: #7c3aed;
+}
+
+.cancel-btn {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex: 1;
+}
+
+.cancel-btn:hover {
+  background-color: #666;
+}

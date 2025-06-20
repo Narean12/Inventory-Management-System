@@ -1,0 +1,108 @@
+.products-container {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, black, #5b21b6);
+}
+  
+.products-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+  
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+  
+.products-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+  
+.add-product-btn {
+    padding: 8px 16px;
+    background-color: #6b21b6;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s ease;
+}
+  
+.add-product-btn:hover {
+    background-color: #7c3aed;
+}
+  
+.icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+  
+.products-table-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+  
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+.table-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+  
+.table-header th {
+    padding: 12px 24px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+  
+.table-body tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+  
+.table-body td {
+    padding: 12px 24px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+  
+.product-name, .product-category, .product-stock, .product-price {
+    color: white;
+}
+  
+.actions {
+    text-align: right;
+}
+  
+.edit-btn {
+    color: #2196f3;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+  
+.edit-btn:hover {
+    color: #64b5f6;
+}
+  
+.delete-btn {
+    color: #f44336;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+  
+.delete-btn:hover {
+    color: #e57373;
+}
